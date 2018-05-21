@@ -1,5 +1,6 @@
-const React = require('react');
-const { renderToMenu } = require('./render');
+import React from 'react';
+import PropTypes from 'prop-types';
+import { renderToMenu } from './render';
 
 /**
  * Component to render a menu.
@@ -25,11 +26,11 @@ class Menu extends React.Component {
 }
 
 Menu.propTypes = {
-    children: React.PropTypes.node.isRequired
+    children: PropTypes.node.isRequired
 };
 
 Menu.contextTypes = {
-    electron: React.PropTypes.object.isRequired
+    electron: PropTypes.object.isRequired
 };
 
 module.exports = Menu;

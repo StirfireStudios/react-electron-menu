@@ -1,4 +1,4 @@
-const Menu = require('./Menu');
+import Menu from './Menu';
 
 /**
  * Menu that only render for current window.

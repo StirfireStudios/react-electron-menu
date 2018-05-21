@@ -1,21 +1,12 @@
-const React = require('react');
-const MenuItem = require('./MenuItem');
+import React from 'react';
+import PropTypes from 'prop-types';
+import MenuItem from './MenuItem';
 
 /**
  * Default file menu for the application.
  * @type {ReactClass}
  */
-const DefaultFileMenu = React.createClass({
-    propTypes: {
-        appName:  React.PropTypes.string.isRequired,
-        onAbout:  React.PropTypes.func.isRequired,
-        children: React.PropTypes.node
-    },
-
-    contextTypes: {
-        electron: React.PropTypes.object.isRequired
-    },
-
+class DefaultFileMenu extends React.Component {
     render() {
         const { appName, children, onAbout } = this.props;
         const { electron } = this.context;
@@ -44,6 +35,16 @@ const DefaultFileMenu = React.createClass({
             </MenuItem>
         );
     }
-});
+}
+
+DefaultFileMenu.propTypes = {
+    appName:  PropTypes.string.isRequired,
+    onAbout:  PropTypes.func.isRequired,
+    children: PropTypes.node
+};
+
+DefaultFileMenu.contextTypes = {
+    electron: PropTypes.object.isRequired
+};
 
 module.exports = DefaultFileMenu;

@@ -1,5 +1,6 @@
-const React = require('react');
-const Menu = require('./Menu');
+import React from 'react';
+import PropTypes from 'prop-types';
+import Menu from './Menu';
 
 /**
  * Menu shown at a specific position.
@@ -34,9 +35,10 @@ class PopupMenu extends Menu {
 
 PopupMenu.propTypes = {
     ...Menu.propTypes,
-    x: React.PropTypes.number,
-    y: React.PropTypes.number
+    x: PropTypes.number,
+    y: PropTypes.number
 };
+
 PopupMenu.contextTypes = Menu.contextTypes;
 
 module.exports = PopupMenu;

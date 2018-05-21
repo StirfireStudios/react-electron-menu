@@ -1,14 +1,15 @@
 {
   "name": "react-electron-menu",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "main": "lib/index.js",
   "author": "Samy Pesse <samypesse@gmailk.com>",
   "description": "React API to create menu for electron",
   "bugs": "https://github.com/SamyPesse/react-electron-menu/issues",
   "license": "Apache-2.0",
   "dependencies": {
-    "react": "^15.4.2",
-    "react-test-renderer": "^15.4.2"
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-test-renderer": "^16.3.2"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",

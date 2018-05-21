@@ -1,4 +1,5 @@
-const React = require('react');
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const FAKE_ELECTRON = {
     remote: {
@@ -30,8 +31,8 @@ class Provider extends React.Component {
 }
 
 Provider.propTypes = {
-    children: React.PropTypes.node.isRequired,
-    electron: React.PropTypes.object.isRequired
+    children: PropTypes.node.isRequired,
+    electron: PropTypes.object.isRequired
 };
 
 Provider.defaultProps = {
@@ -39,7 +40,7 @@ Provider.defaultProps = {
 };
 
 Provider.childContextTypes = {
-    electron: React.PropTypes.object.isRequired
+    electron: PropTypes.object.isRequired
 };
 
 module.exports = Provider;
