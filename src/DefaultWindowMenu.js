@@ -25,7 +25,7 @@ class DefaultWindowMenu extends React.Component {
 }
 
 DefaultWindowMenu.propTypes = {
-    children: PropTypes.node,
+    children: PropTypes.node
 };
 
 DefaultWindowMenu.contextTypes = {
