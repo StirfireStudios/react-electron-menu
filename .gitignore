@@ -27,4 +27,5 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
-lib
+# removed for now because we want a usable package without publishing it.
+#lib
